@@ -33,13 +33,11 @@ const Hero = () => {
               style={{
                 transform: "translate(0%, -50%)",
               }}
+              data-aos="fade-down"
+              data-aos-delay="400"
             >
               {/* title */}
-              <h1
-                className="text-4xl xl:max-w-[700px] font-bold"
-                data-aos="fade-down"
-                data-aos-delay="400"
-              >
+              <h1 className="text-4xl xl:max-w-[700px] font-bold">
                 Khoảnh Khắc Tìm Lại Trường Xưa
               </h1>
               <h1
@@ -67,6 +65,8 @@ const Hero = () => {
                  text-[#3D92D1] font-bold hover:bg-[#3D92D1] hover:text-white"
                 style={{ display: "flex", alignItems: "center" }}
                 onClick={openModal}
+                data-aos="fade-down"
+                data-aos-delay="400"
               >
                 {/* icon tìm kiếm */}
                 <i className="fas fa-search"></i>
