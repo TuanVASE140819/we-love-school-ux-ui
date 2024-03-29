@@ -28,7 +28,12 @@ const Hero = () => {
         <div className="container mx-auto h-full relative">
           <div className="flex flex-col xl:flex-row items-center h-full md:py-24">
             {/* text */}
-            <div className="text-center xl:text-left xl:absolute">
+            <div
+              className="text-center xl:text-left xl:absolute"
+              style={{
+                transform: "translate(0%, -50%)",
+              }}
+            >
               {/* title */}
               <h1
                 className="text-4xl xl:max-w-[700px] font-bold"

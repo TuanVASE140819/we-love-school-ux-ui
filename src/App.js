@@ -41,7 +41,7 @@ const App = () => {
             element={
               <>
                 <Helmet>
-                  <title>Skin Care - Ứng dụng chăm sóc da thông minh</title>
+                  <title>WeLoveSchool</title>
                   <meta
                     name="description"
                     content="Ứng dụng chăm sóc da thông minh"
