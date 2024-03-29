@@ -23,10 +23,10 @@ const Footer = () => {
   return (
     <>
       <footer
-        className="mt-20 hidden md:block  pt-10 border-t-2 border-[#3D92D1] bg-slate-100
+        className="mt-20 hidden md:block  pt-10  border-t-2 border-[#3D92D1] bg-slate-100
       "
       >
-        <div className="container mx-auto">
+        <div className="container mx-auto mb-5">
           <div className="flex flex-col xl:flex-row text-center xl:text-left gap-y-12">
             {/* info */}
             <div className="w-[40%] mx-auto flex flex-col items-center xl:items-start">
@@ -85,7 +85,7 @@ const Footer = () => {
                 <ul className="flex flex-col gap-y-4">
                   {/* svg  facebook , instagram, tiktok , shoppee */}
 
-                  {list3.map((item, index) => {
+                  {/* {list3.map((item, index) => {
                     return (
                       <li key={index}>
                         <a className="text-primary" href={item.href}>
@@ -93,7 +93,7 @@ const Footer = () => {
                         </a>
                       </li>
                     );
-                  })}
+                  })} */}
                 </ul>
               </div>
               {/* social list */}
