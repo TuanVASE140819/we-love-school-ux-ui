@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import Modal from 'react-modal';
+import React, { useState, useEffect } from "react";
+import Modal from "react-modal";
 
 import { heroData } from "../data";
 
@@ -8,7 +8,8 @@ import "../page/index.css";
 import { useTranslation } from "react-i18next";
 
 import image from "../../src/assets/img/WLS/tanca.png";
-
+import xemay from "../../src/assets/img/WLS/xemay.png";
+import santruong from "../../src/assets/img/WLS/santruong.png";
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -34,6 +35,26 @@ const Hero = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
   };
+
+  const images = [
+    "https://via.placeholder.com/30",
+    "https://via.placeholder.com/30",
+    "https://via.placeholder.com/30",
+    // add more image URLs as needed
+  ];
+
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentImageIndex((currentImageIndex + 1) % images.length);
+    }, 2000); // change image every 2 seconds
+
+    return () => {
+      clearInterval(timer);
+    };
+  }, [currentImageIndex]);
+
   const { t } = useTranslation();
   return (
     <>
@@ -55,7 +76,7 @@ const Hero = () => {
                 Khoảnh Khắc Tìm Lại Trường Xưa
               </h1>
               <h1
-                className="text-4xl xl:max-w-[700px] text-[#C48B1A] font-bold"
+                className="text-4Sxl xl:max-w-[700px] text-[#C48B1A] font-bold"
                 data-aos="fade-down"
                 data-aos-delay="400"
               >
@@ -102,6 +123,27 @@ const Hero = () => {
                 style={{ width: "87%", height: "auto" }}
               />
             </div>
+            <img
+              src={xemay}
+              alt=""
+              className=" ml-30 ml-5 xl:ml-0"
+              style={{
+                width: "20%",
+                height: "auto",
+                transform: "translate(220%, 90%)",
+              }}
+            />
+            <img
+              src={santruong}
+              alt=""
+              className=" ml-30 ml-5 xl:ml-0"
+              style={{
+                zIndex: "-1",
+                width: "15%",
+                height: "auto",
+                transform: "translate(100%, 120%)",
+              }}
+            />
           </div>
         </div>
       </section>
