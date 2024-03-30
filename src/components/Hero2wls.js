@@ -50,7 +50,7 @@ const Hero2 = () => {
             >
               Ngược thời gian, xem nào!
               <br />
-              Bạn có bỏ lỡ khoản khắc nào không?
+              Bạn có bỏ lỡ khoảnh khắc nào không?
             </div>
             {/* image */}
           </div>
