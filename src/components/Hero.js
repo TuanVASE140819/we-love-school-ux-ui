@@ -76,7 +76,7 @@ const Hero = () => {
                 Khoảnh Khắc Tìm Lại Trường Xưa
               </h1>
               <h1
-                className="text-4Sxl xl:max-w-[700px] text-[#C48B1A] font-bold"
+                className="text-4xl xl:max-w-[700px] text-[#C48B1A] font-bold"
                 data-aos="fade-down"
                 data-aos-delay="400"
               >
