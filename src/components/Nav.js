@@ -7,8 +7,10 @@ const Nav = () => {
   return (
     <nav>
       <ul className="flex gap-x-8">
-        <li>
-          <a href="/">Trang Chủ</a>
+        <li className="active">
+          <a href="/" className="text-red-500">
+            Trang Chủ
+          </a>
         </li>
         <li>
           <a href="/">Bạn Bè</a>

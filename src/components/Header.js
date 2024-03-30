@@ -20,6 +20,8 @@ const Header = () => {
       style={{
         // #F6FAFD
         backgroundColor: "#F6FAFD",
+        marginLeft: "auto",
+        marginRight: "auto",
       }}
       // style={{ backgroundColor: "white" }}
       // data-aos="fade-down"
@@ -27,7 +29,7 @@ const Header = () => {
       // data-aos-duration="1000"
     >
       <div className="container mx-auto">
-        <div className="flex items-center justify-between">
+        <div className="">
           <div className="flex items-center justify-between gap-x-[120px]">
             {/* logo */}
             <div className="flex items-center">
@@ -42,20 +44,16 @@ const Header = () => {
               <Nav />
             </div>
             <div
-              className="hidden lg:flex gap-x-8 items-center justify-between"
-              // style={{ marginRight: "auto" }}
+              className="hidden lg:flex gap-x-8 items-center"
+              style={{ justifyContent: "flex-end" }}
             >
               {/*  Button đăng kí và đăng nhập */}
-              <button
-                className="px-6 py-2  bg-[#3D92D1] text-white font-bold"
-                style={{ marginRight: "auto" }}
-              >
+              <button className="px-6 py-2  bg-[#3D92D1] text-white font-bold">
                 Đăng nhập
               </button>
               <button
                 className="px-6 py-2 bg-white
-           text-[#3D92D1] font-bold border border-radius-2xl border-[#3D92D1] "
-                style={{ marginRight: "auto" }}
+   text-[#3D92D1] font-bold border border-radius-2xl border-[#3D92D1] "
               >
                 Đăng kí
               </button>

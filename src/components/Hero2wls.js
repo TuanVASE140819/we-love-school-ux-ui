@@ -23,10 +23,10 @@ const Hero2 = () => {
   const { t } = useTranslation();
   return (
     <>
-      <section className="lg:h-[550px] pt-[20rem] hidden md:block">
+      <section className="lg:h-[650px] pt-[20rem] hidden md:block mb-10">
         {/* <Header /> */}
         <div className="container mx-auto h-full relative">
-          <div className="flex flex-col xl:flex-row items-center h-full">
+          <div className="flex flex-col xl:flex-row items-center h-full ">
             {/* text */}
             <div data-aos="fade-up" data-aos-delay="700">
               <img

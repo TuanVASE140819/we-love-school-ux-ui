@@ -8,6 +8,12 @@ import "../page/index.css";
 import { useTranslation } from "react-i18next";
 
 import image from "../../src/assets/img/WLS/tanca.png";
+
+
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 const Hero = () => {
   // destructure hero
   const { title, title2, subtitle, btnText, image2 } = heroData;
@@ -19,6 +25,14 @@ const Hero = () => {
 
   const closeModal = () => {
     setModalIsOpen(false);
+  };
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
   };
   const { t } = useTranslation();
   return (
