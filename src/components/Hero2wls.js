@@ -42,7 +42,7 @@ const Hero2 = () => {
                 position: "absolute",
                 top: "50%",
                 left: "50%",
-                transform: "translate(-23%, 130%)",
+                transform: "translate(-23%, 150%)",
                 width: "100%",
               }}
               data-aos="fade-up"
